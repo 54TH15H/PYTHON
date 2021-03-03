@@ -1,3 +1,5 @@
+# CHECKING WHETHER THE GIVEN INPUT IS PRIME OR NON-PRIME NUMBER
+
 def check(y):
     try:
         return abs(int(y))
