@@ -1,3 +1,5 @@
+#PRIME NUMBERS UNTIL THE GIVEN  NUMBER
+
 def check(t):
     try:
         return abs(int(t))
