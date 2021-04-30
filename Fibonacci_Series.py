@@ -9,7 +9,7 @@ def check(n):
         return check(input("Plz, Enter a Valid Number : ))
 
 print(" Fibonacci Series ")
-a, b=0, 1
+a, b = 0, 1
 num = check(input("Enter a Positive Number : "))
 if num == 0:
     print("   ")
