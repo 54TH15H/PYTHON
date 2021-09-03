@@ -1,3 +1,5 @@
+# column numbering in excel.
+# 1 - A , 26 - Z , 27 - AA , 702 - AAA , 16000 - WQJ .....,
 def numToChar(q):
     def getChar(n):
         return chr(n+64)
