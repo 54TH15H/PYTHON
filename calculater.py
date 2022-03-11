@@ -69,12 +69,16 @@ def logm(a):
 # RETURNS INTEGER VALUE OF G IF G IS A DIGIT ELSE TERMINATES THE PROGRAM
 
 
-def checkisdigit(g):
-    if g.isdigit():
-        return int(g)
-    else:
-        print(' INVALID ENTRY ')
-        exit(0)
+def checkisdigit(l):
+    try:
+        return int(l)
+    except ValueError:
+        try:
+            return float(l)
+        except ValueError:
+            print(' Invalid Entry ')
+            exit()
+
 
 print(' A SIMPLE CALCULATOR ')
 print(' 1 : ARITHMETIC \n 2 : MATRIX \n 3 : TRIGONOMETRY \n 4 : FACTORIAL \n 5 : AREA \n 6 : PERIMETER \n 7 : LOGARITHMIC \n 8 : SQUARE ROOT \n 9 : CLOSE \n')

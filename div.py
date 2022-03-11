@@ -1,10 +1,13 @@
 
-def checkisdigit(g):
-    if g.isdigit():
-        return int(g)
-    else:
-        print(' INVALID ENTRY ')
-        exit(0)
+def checkisdigit(l):
+    try:
+        return int(l)
+    except ValueError:
+        try:
+            return float(l)
+        except ValueError:
+            print(' Invalid Entry ')
+            exit()
 
 def div(a, b):
 
